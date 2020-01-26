@@ -26,7 +26,7 @@ export default class Tasks {
   }
 
   getProcessedData() {
-    return this.data
+    const returned = this.data
       .reduce<taskType[]>((acc, cur) => {
         if (cur.group === 0) {
           return [...acc, cur];
@@ -46,5 +46,6 @@ export default class Tasks {
         }
       }, [])
       .sort(alphabeticalOrder);
+    return returned;
   }
 }

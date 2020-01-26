@@ -1,11 +1,11 @@
 import React from "react";
 import { shallow, ShallowWrapper } from "enzyme";
-import { Tasks } from "./";
+import Table from "./";
 
-describe("Tasks Component", () => {
+describe("Table Component", () => {
   let wrapper: ShallowWrapper;
   beforeEach(() => {
-    wrapper = shallow(<Tasks />);
+    wrapper = shallow(<Table data={[]} />);
   });
 
   it("Should render without errors", () => {
