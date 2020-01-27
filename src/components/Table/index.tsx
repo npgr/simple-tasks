@@ -1,6 +1,6 @@
 import React from "react";
 import { Table } from "semantic-ui-react";
-import { taskType } from "tasks";
+import taskType from "tasks/taskType.t";
 
 interface TableProps {
   data: taskType[];
